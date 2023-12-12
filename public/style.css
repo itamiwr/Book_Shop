@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+/* @tailwind base; */
+
+.container{
+  width:100%;
+  margin-right:auto;
+  margin-left:auto;
+  padding-right:1rem;
+  padding-left:1rem;
+}
+
+@media (min-width: 560px){
+  .container{
+    max-width:560px;
+  }
+}
+
+@media (min-width: 768px){
+  .container{
+    max-width:768px;
+  }
+}
+
+@media (min-width: 992px){
+  .container{
+    max-width:992px;
+  }
+}
+
+@media (min-width: 1200px){
+  .container{
+    max-width:1200px;
+  }
+}
+
+.absolute{
+  position:absolute;
+}
+
+.relative{
+  position:relative;
+}
+
+.-right-3{
+  right:-0.75rem;
+}
+
+.left-4{
+  left:1rem;
+}
+
+.right-0{
+  right:0px;
+}
+
+.top-1{
+  top:0.25rem;
+}
+
+.top-2{
+  top:0.5rem;
+}
+
+.mr-4{
+  margin-right:1rem;
+}
+
+.flex{
+  display:flex;
+}
+
+.h-5{
+  height:1.25rem;
+}
+
+.w-24{
+  width:6rem;
+}
+
+.w-5{
+  width:1.25rem;
+}
+
+.w-full{
+  width:100%;
+}
+
+.max-w-xl{
+  max-width:36rem;
+}
+
+.flex-grow{
+  flex-grow:1;
+}
+
+.cursor-pointer{
+  cursor:pointer;
+}
+
+.flex-row-reverse{
+  flex-direction:row-reverse;
+}
+
+.items-center{
+  align-items:center;
+}
+
+.justify-center{
+  justify-content:center;
+}
+
+.justify-between{
+  justify-content:space-between;
+}
+
+.space-x-4 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-x-reverse:0;
+  margin-right:calc(1rem * var(--tw-space-x-reverse));
+  margin-left:calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-x-6 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-x-reverse:0;
+  margin-right:calc(1.5rem * var(--tw-space-x-reverse));
+  margin-left:calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.rounded-full{
+  border-radius:9999px;
+}
+
+.rounded-l-md{
+  border-top-left-radius:0.375rem;
+  border-bottom-left-radius:0.375rem;
+}
+
+.rounded-r-md{
+  border-top-right-radius:0.375rem;
+  border-bottom-right-radius:0.375rem;
+}
+
+.border{
+  border-width:1px;
+}
+
+.border-r-0{
+  border-right-width:0px;
+}
+
+.border-sky-900{
+  --tw-border-opacity:1;
+  border-color:rgb(12 74 110 / var(--tw-border-opacity));
+}
+
+.border-sky-950{
+  --tw-border-opacity:1;
+  border-color:rgb(8 47 73 / var(--tw-border-opacity));
+}
+
+.bg-sky-600{
+  --tw-bg-opacity:1;
+  background-color:rgb(2 132 199 / var(--tw-bg-opacity));
+}
+
+.bg-sky-700{
+  --tw-bg-opacity:1;
+  background-color:rgb(3 105 161 / var(--tw-bg-opacity));
+}
+
+.bg-sky-800{
+  --tw-bg-opacity:1;
+  background-color:rgb(7 89 133 / var(--tw-bg-opacity));
+}
+
+.bg-sky-950{
+  --tw-bg-opacity:1;
+  background-color:rgb(8 47 73 / var(--tw-bg-opacity));
+}
+
+.px-8{
+  padding-left:2rem;
+  padding-right:2rem;
+}
+
+.py-3{
+  padding-top:0.75rem;
+  padding-bottom:0.75rem;
+}
+
+.py-4{
+  padding-top:1rem;
+  padding-bottom:1rem;
+}
+
+.pl-12{
+  padding-left:3rem;
+}
+
+.pr-12{
+  padding-right:3rem;
+}
+
+.pr-3{
+  padding-right:0.75rem;
+}
+
+.text-center{
+  text-align:center;
+}
+
+.text-right{
+  text-align:right;
+}
+
+.text-2xl{
+  font-size:1.5rem;
+  line-height:2rem;
+}
+
+.text-lg{
+  font-size:1.125rem;
+  line-height:1.75rem;
+}
+
+.text-xs{
+  font-size:0.75rem;
+  line-height:1rem;
+}
+
+.capitalize{
+  text-transform:capitalize;
+}
+
+.leading-3{
+  line-height:.75rem;
+}
+
+.text-sky-300{
+  --tw-text-opacity:1;
+  color:rgb(125 211 252 / var(--tw-text-opacity));
+}
+
+.text-sky-600{
+  --tw-text-opacity:1;
+  color:rgb(2 132 199 / var(--tw-text-opacity));
+}
+
+.text-white{
+  --tw-text-opacity:1;
+  color:rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.no-underline{
+  text-decoration-line:none;
+}
+
+.shadow-sm{
+  --tw-shadow:0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);
+  box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.transition{
+  transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration:150ms;
+}
+
+@font-face {
+  font-family:fonty ;
+
+  src: url(/font/Vazirmatn-RD-Bold.ttf);
+}
+
+body{
+  font-family: fonty;
+}
+
+.hover\:bg-sky-600:hover{
+  --tw-bg-opacity:1;
+  background-color:rgb(2 132 199 / var(--tw-bg-opacity));
+}
+
+.hover\:text-sky-300:hover{
+  --tw-text-opacity:1;
+  color:rgb(125 211 252 / var(--tw-text-opacity));
+}
+
+.hover\:text-sky-400:hover{
+  --tw-text-opacity:1;
+  color:rgb(56 189 248 / var(--tw-text-opacity));
+}
+
+.hover\:text-white:hover{
+  --tw-text-opacity:1;
+  color:rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.focus\:outline-none:focus{
+  outline:2px solid transparent;
+  outline-offset:2px;
+}
+    
