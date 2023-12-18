@@ -12,8 +12,9 @@
     body{
         font-family: fonty;
     }
-
-
-    
+    a{
+        @apply  no-underline
+    }
+ 
 }
     
