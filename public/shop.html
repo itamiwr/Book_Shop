@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book_marketing</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="text-right">
+    <!-- header -->
+    <header class="py-4 shadow-sm ">
+        <div class="container flex items-center justify-between">
+            <!-- لوگو -->
+            <a href="#">
+                <img src="/img/logo.png" alt="" class="w-24">
+            </a>
+
+
+            <!-- نوارجستجو -->
+            <div class="w-full max-w-xl relative flex">
+                <span class="absolute left-4 top-2 text-lg text-sky-600">
+                    <i class="fas fa-search"></i>
+                </span>
+                <input type="text"
+                    class="w-full border border-sky-900 border-r-0 pl-12 py-3 pr-3 rounded-l-md focus:outline-none"
+                    placeholder="جستجو">
+                <button
+                    class="bg-sky-800 border border-sky-950 text-white px-8 rounded-r-md hover:bg-sky-600 hover:text-sky-300 transition">جستجو</button>
+            </div>
+
+
+            <!-- آیکون -->
+            <div class="flex items-center space-x-4">
+                <a href="#" class="text-center text-sky-600 hover:text-sky-400 no-underline transition relative">
+                    <div class="text-2xl">
+                        <i class="far fa-heart"></i>
+                    </div>
+                    <div class="text-xs leading-3">علاقه مندی ها</div>
+                    <span
+                        class="absolute right-0 top-1 w-5 h-5 rounded-full flex items-center justify-center bg-sky-600 text-white text-xs">8</span>
+                </a>
+                <a href="#" class="text-center text-sky-600 hover:text-sky-400 no-underline transition relative">
+                    <div class="text-2xl">
+                        <i class="fas fa-shopping-bag"></i>
+                    </div>
+                    <div class="text-xs leading-3">سبد خرید</div>
+                    <span
+                        class="absolute -right-3 top-1 w-5 h-5 rounded-full flex items-center justify-center bg-sky-600 text-white text-xs">8
+                    </span>
+                </a>
+                <a href="#" class="text-center text-sky-600 hover:text-sky-400 no-underline transition relative">
+                    <div class="text-2xl">
+                        <i class="far fa-user"></i>
+                    </div>
+                    <div class="text-xs leading-3">حساب کاربری</div>
+                    <span
+                        class="absolute right-0 top-1 w-5 h-5 rounded-full flex items-center justify-center bg-sky-600 text-white text-xs">8</span>
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- navbar -->
+    <nav class="bg-sky-950">
+        <div class="container flex flex-row-reverse ">
+            <!-- دسته ها -->
+            <div class="px-8 py-5 bg-sky-700 flex items-center cursor-pointer  relative group">
+                <span class="capitalize mx-6 text-white">دسته بندی ها</span>
+                <span class="text-white">
+                    <i class="fas fa-bars"></i>
+                </span>
+                <div
+                    class="absolute w-full left-0 top-full bg-white shadow-md py-3 divide-y divide-dashed divide-x-0 divide-sky-300 hidden group-hover:block">
+                    <!-- تک دسته -->
+                    <a href="#" class=" px-6 py-3 flex items-center hover:bg-sky-100 transition">
+                        <img src="/img/sport.svg" alt="" class="w-5 h-5 object-contain">
+                        <span class="ml-6 text-sky-600 text-sm ">ورزش ها</span>
+                    </a>
+
+                    <a href="#" class="flex items-center px-6 py-3 hover:bg-sky-100 transition ">
+                        <img src="/img/astronomy.svg" alt="" class="w-5 h-5 object-contain">
+                        <span class="ml-6 text-sky-600 text-sm ">ستاره شناسی</span>
+                    </a>
+
+                    <a href="#" class="flex items-center px-6 py-3 hover:bg-sky-100 transition ">
+                        <img src="/img/Dinosaurs.svg" alt="" class="w-5 h-5 object-contain">
+                        <span class="ml-6 text-sky-600 text-sm ">دایناسورها</span>
+                    </a>
+
+                    <a href="#" class="flex items-center px-6 py-3 hover:bg-sky-100 transition ">
+                        <img src="/img/History.svg" alt="" class="w-5 h-5 object-contain">
+                        <span class="ml-6 text-sky-600 text-sm ">تاریخ</span>
+                    </a>
+
+                    <a href="#" class="flex items-center px-6 py-3 hover:bg-sky-100 transition ">
+                        <img src="/img/philosophical.svg" alt="" class="w-5 h-5 object-contain">
+                        <span class="ml-6 text-sky-600 text-sm ">فلسفی</span>
+                    </a>
+
+                    <a href="#" class="flex items-center px-6 py-3 hover:bg-sky-100 transition ">
+                        <img src="/img/Programming.svg" alt="" class="w-5 h-5 object-contain">
+                        <span class="ml-6 text-sky-600 text-sm ">برنامه نویسی</span>
+                    </a>
+                    <!-- پایان تک دسته -->
+                </div>
+
+
+            </div>
+
+            <!-- پایان دسته ها -->
+
+            <!-- nav لینک ها در -->
+            <div class="flex items-center justify-between flex-grow pr-12">
+                <div class="flex items-center space-x-6 capitalize">
+                    <a href="#" class="text-sky-300 hover:text-white transition ">خانه</a>
+                    <a href="#" class="text-sky-300 hover:text-white transition ">فروشگاه</a>
+                    <a href="#" class="text-sky-300 hover:text-white transition ">درباره ما</a>
+                    <a href="#" class="text-sky-300 hover:text-white transition ">ارتباط با ما</a>
+                </div>
+                <a href="#" class="text-sky-300 hover:text-white transition ">ورود/ثبت نام</a>
+            </div>
+
+        </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- breadcrums -->
+    <div class="container py-4 flex items-center gap-3">
+        <a href="home.html" class="text-sky-950 text-base">
+            <i class="fas fa-home"></i>
+        </a>
+        <span class="text-sm text-sky-300">
+            <i class="fas fa-chevron-right"></i>
+        </span>
+        <p class="text-sky-600 font-medium">shop</p>
+    </div>
+    <!-- breadcrums end -->
+
+    <!-- shop wrapper -->
+    <div class="container grid grid-cols-4 gap-6 pt-4 pb-16 items-center">
+        <!-- sidebar -->
+        <div class="col-span-1 bg-white px-4 py-6 shadow rounded overflow-hidden">
+            <div class="divide-y divide-sky-200 space-y-5">
+                <!-- category filter -->
+                <div class="pt-4">
+                    <h3 class="text-xl text-sky-950 mb-3 uppercase font-medium">دسته بندی ها</h3>
+                    <div class="input space-y-2">
+                        <!--single category-->
+                        <div class="flex items-center">
+                            <input type="checkbox" id="cat-1" class="rounded- ">
+                            <label for="cat-1" class="text-sky-600 ml-3 cursor-pointer">ورزشی</label>
+                            <div class="ml-auto text-sky-600 text-sm">(15)</div>
+                        </div>
+                        <!--single category-->
+                        <div class="flex items-center">
+                            <input type="checkbox" id="cat-1" class="rounded- ">
+                            <label for="cat-1" class="text-sky-600 ml-3 cursor-pointer">ستاره شناسی</label>
+                            <div class="ml-auto text-sky-600 text-sm">(20)</div>
+                        </div>
+                        <!--single category-->
+                        <div class="flex items-center">
+                            <input type="checkbox" id="cat-1" class="rounded- ">
+                            <label for="cat-1" class="text-sky-600 ml-3 cursor-pointer">دایناسورها</label>
+                            <div class="ml-auto text-sky-600 text-sm">(10)</div>
+                        </div>
+                        <!--single category-->
+                        <div class="flex items-center">
+                            <input type="checkbox" id="cat-1" class="rounded- ">
+                            <label for="cat-1" class="text-sky-600 ml-3 cursor-pointer">تاریخ</label>
+                            <div class="ml-auto text-sky-600 text-sm">(15)</div>
+                        </div>
+                        <!--single category-->
+                        <div class="flex items-center">
+                            <input type="checkbox" id="cat-1" class="rounded- ">
+                            <label for="cat-1" class="text-sky-600 ml-3 cursor-pointer">فلسفی</label>
+                            <div class="ml-auto text-sky-600 text-sm">(20)</div>
+                        </div>
+                        <!--single category-->
+                        <div class="flex items-center">
+                            <input type="checkbox" id="cat-1" class="rounded- ">
+                            <label for="cat-1" class="text-sky-600 ml-3 cursor-pointer">برنامه نویسی</label>
+                            <div class="ml-auto text-sky-600 text-sm">(25)</div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- category filter end -->
+                <hr>
+                <!-- brand filter -->
+                <div>
+                    <h3 class="text-xl text-sky-950 mb-3 uppercase font-medium">مارک ها</h3>
+                    <div class="input space-y-2">
+                        <!--single category-->
+                        <div class="flex items-center">
+                            <input type="checkbox" id="cat-1" class="rounded- ">
+                            <label for="cat-1" class="text-sky-600 ml-3 cursor-pointer">انتشارات امیرکبیر</label>
+                            <div class="ml-auto text-sky-600 text-sm">(30)</div>
+                        </div>
+                        <!--single category-->
+                        <div class="flex items-center">
+                            <input type="checkbox" id="cat-1" class="rounded- ">
+                            <label for="cat-1" class="text-sky-600 ml-3 cursor-pointer">انتشارات ققنوس</label>
+                            <div class="ml-auto text-sky-600 text-sm">(30)</div>
+                        </div>
+                        <!--single category-->
+                        <div class="flex items-center">
+                            <input type="checkbox" id="cat-1" class="rounded- ">
+                            <label for="cat-1" class="text-sky-600 ml-3 cursor-pointer">انتشارات چشمه</label>
+                            <div class="ml-auto text-sky-600 text-sm">(20)</div>
+                        </div>
+                        <!--single category-->
+                        <div class="flex items-center">
+                            <input type="checkbox" id="cat-1" class="rounded- ">
+                            <label for="cat-1" class="text-sky-600 ml-3 cursor-pointer">انتشارات نگاه</label>
+                            <div class="ml-auto text-sky-600 text-sm">(25)</div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- brand filter end -->
+
+                <!-- price filter -->
+                <div class="pt-4">
+                    <h3 class="text-xl text-sky-800 mb-3 uppercase font-medium">قیمت برند</h3>
+                    <div class="mt-4 flex items-center">
+                        <input type="text" class="w-full border-sky-300 focus:border-sky-500 focus:ring-0 px-3 py-1 text-sky-950 text-sm shadow-sm rounded" placeholder="min">
+                        <span class="mx-3 text-sky-500">-</span>
+                        <input type="text" class="w-full border-sky-300 focus:border-sky-500 focus:ring-0 px-3 py-1 text-sky-950 text-sm shadow-sm rounded" placeholder="max">
+                    </div>
+                </div>
+                <!-- price filter end -->
+
+                <!-- size filter -->
+                <div class="pt-4">
+                    <h3 class="text-xl text-sky-800 mb-3 uppercase font-medium">اندازه</h3>
+                    <div class="flex items-center gap-2">
+                        <!-- single size -->
+                        <div class="size-selector">
+                            <input type="radio" name="size" class="hidden" id="size-s">
+                            <label for="size-s" class="text-sm border border-sky-200 rounded-sm h-6 w-6 flex items-center justify-center cursor-pointer shadow-sm text-sky-600">S</label>
+                        </div>
+                        <!-- single size end -->
+                        <!-- single size -->
+                        <div class="size-selector">
+                            <input type="radio" name="size" class="hidden" id="size-b">
+                            <label for="size-b" class="text-sm border border-sky-200 rounded-sm h-6 w-6 flex items-center justify-center cursor-pointer shadow-sm text-sky-600">B</label>
+                        </div>
+                        <!-- single size end -->
+                    </div>
+                </div>
+                <!-- size filter end -->
+            </div>
+        </div>
+        <!-- sidebar end -->
+        <!-- products -->
+    </div>
+    <!-- shop wrapper end -->
+
+    <!-- Footer -->
+    <footer class="bg-white pt-16 pb-12  font-bold border-t border-sky-100">
+        <div class="container grid grid-cols-3 ">
+            <!-- footer text -->
+            <div class="col-span-1 space-y-8">
+                <img src="/img/logo.png" class="w-32 h-32" alt="logo">
+                <p class="fonty font-bold text-purple-900">تمام تلاش ما برای بهبود اطلاعات شماست<br>با خواندن کتاب
+                    بهترین خودت
+                    باش</p>
+                <div>
+                    <a href="" class="text-purple-600 hover:text-gray-600 pl-4"><i class="fab fa-facebook-f"></i></a>
+                    <a href="" class="text-purple-600 hover:text-gray-600 pl-4"><i class="fab fa-twitter"></i></a>
+                    <a href="" class="text-purple-600 font-bold400 hover:text-gray-600 pl-4"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="" class="text-purple-600 hover:text-gray-600 pl-4"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <!-- End footer text  -->
+
+            <!-- footer links -->
+            <div class="col-span-2 grid grid-cols-2 gap-8">
+                <div class="grid grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-sm font-semibold text-purple-400 uppercase tracking-wider">راه حل ها</h3>
+                        <div class="mt-4 space-y-4 font-bold">
+                            <a href="" class="text-base text-gray-500 hover:text-black block">بازاریابی</a>
+                            <a href="" class="text-base text-gray-500 hover:text-black block">تجزیه و تحلیل</a>
+                            <a href="" class="text-base text-gray-500 hover:text-black block">تبلیغات</a>
+                            <a href="" class="text-base text-gray-500 hover:text-black block">بینش</a>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-semibold text-purple-400 uppercase tracking-wider">پشتیبانی</h3>
+                        <div class="mt-4 space-y-4 font-bold">
+                            <a href="" class="text-base text-gray-500 hover:text-black block">قیمت گزاری</a>
+                            <a href="" class="text-base text-gray-500 hover:text-black block">وضعیت api</a>
+                            <a href="" class="text-base text-gray-500 hover:text-black block">مستندات</a>
+                            <a href="" class="text-base text-gray-500 hover:text-black block">راهنمایی ها</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-sm font-semibold text-purple-400 uppercase tracking-wider">مجاز</h3>
+                        <div class="mt-4 space-y-4 font-bold">
+                            <a href="" class="text-base text-gray-500 hover:text-black block">مطالبه</a>
+                            <a href="" class="text-base text-gray-500 hover:text-black block">حریم خصوصی</a>
+                            <a href="" class="text-base text-gray-500 hover:text-black block">خط مشی</a>
+                            <a href="" class="text-base text-gray-500 hover:text-black block">مقررات</a>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-semibold text-purple-400 uppercase tracking-wider">شرکت</h3>
+                        <div class="mt-4 space-y-4 font-bold">
+                            <a href="" class="text-base text-gray-500 hover:text-black block">درباره ما </a>
+                            <a href="" class="text-base text-gray-500 hover:text-black block">وبلاگ</a>
+                            <a href="" class="text-base text-gray-500 hover:text-black block">فرصت های شغلی</a>
+                            <a href="" class="text-base text-gray-500 hover:text-black block">مطبوعات</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- End footer links -->
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+
+    <!-- Copyright -->
+    <div class="bg-sky-950 py-4">
+        <div class="container flex items-center justify-between">
+            <p class="text-white text-2xl pl-96">&#169; Book_marketing - all right reserved</p>
+        </div>
+    </div>
+    <!-- End Copyright -->
+
+</body>
+
+</html>
